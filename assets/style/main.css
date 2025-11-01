@@ -1,0 +1,258 @@
+@import './fonts.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: #141414;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav {
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    transition: .5s;
+    transform-origin: top;
+}
+
+.nav__btn {
+    width: 20px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.nav__btn span {
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
+.nav__list-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #f0f0f0;
+    transition: .5s;
+}
+
+.nav__list-link:hover {
+    color: #b31d1e;
+}
+
+.header__content {
+    min-height: 747px;
+    background: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__content h1 {
+    font-weight: 600;
+    font-size: 140px;
+    color: #b31d1e;
+}
+
+.header__btn {
+    padding: 18px 64px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #ffa600 0%, #e41818 100%);
+    font-weight: 800;
+    font-size: 24px;
+    color: #141414;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 114px;
+    padding-bottom: 165px;
+}
+
+.content__right img {
+    max-width: 100%;
+}
+
+.content__left_title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #eb3a13;
+    margin-bottom: 30px;
+}
+
+.content__left_text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+.content__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.gallery {
+    padding-bottom: 180px;
+}
+
+.gallery__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.gallery__content h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #eb3a13;
+}
+
+.gallery__content-top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.about {
+    padding-bottom: 120px;
+}
+
+.about__content h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #eb3a13;
+}
+
+.about__content p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 62px;
+    background: #1f1f1f;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+}
+
+.footer__form input {
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #f0f0f0;
+}
+
+.footer__form input::placeholder {
+    color: white;
+
+}
+
+.footer__form button {
+    color: white;
+    padding: 9px 0;
+    background: linear-gradient(135deg, #ffa600 0%, #e41818 100%);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+}
+
+.footer__contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer__contacts-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+
+.footer__contacts-item h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 90%;
+    color: #f0f0f0;
+}
+
+.footer__contacts-item a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #f0f0f0;
+}
