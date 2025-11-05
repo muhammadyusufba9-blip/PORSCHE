@@ -157,6 +157,10 @@ input[type='checkbox'] {
     gap: 30px;
 }
 
+.gallery__content-top div img  {
+    max-width: 100%;
+}
+
 .about__content {
     display: flex;
     flex-direction: column;
